@@ -6,3 +6,11 @@
     <li>{{title}}</li>
   {{/each}}
 </ul>
+
+
+{{#if isEditing}}
+  <p>{{input type="text" value=title}}</p>
+	<button {{action 'doneEditing' 'createPresentation' }}>Save Presentation</button>
+{{else}}
+	<button {{action 'edit'}}>Add Presentation</button>
+{{/if}}

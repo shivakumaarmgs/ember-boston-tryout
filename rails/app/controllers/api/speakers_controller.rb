@@ -6,4 +6,8 @@ class Api::SpeakersController < ApplicationController
   def show
     render json: Speaker.find(params[:id])
   end
+
+  def update
+    Rails.logger.info params
+  end
 end

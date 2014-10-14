@@ -21,6 +21,15 @@ sam.presentations.create(title: "Shaaaad up!")
 sam.presentations.create(title: "Ah hates rabbits.")
 sam.presentations.create(title: "The Great horni-todes")
 
-Post.create(title: "Rails is Great", body: "What else should I say??")
-Post.create(title: "Ember is Mass", body: "What else should I say??")
-Post.create(title: "Mass Ember", body: "What else should I say??")
+rail = Post.create(title: "Rails is Great", body: "What else should I say??")
+ember = Post.create(title: "Ember is Mass", body: "What else should I say??")
+mass = Post.create(title: "Mass Ember", body: "What else should I say??")
+
+rail.comments.create(body: "This is the first Comment")
+rail.comments.create(body: "This is the Second Comment")
+rail.comments.create(body: "This is the Third Comment")
+
+ember.comments.create(body: "Super Ember")
+ember.comments.create(body: "Ember Way")
+
+mass.comments.create(body: "Marana Mass")

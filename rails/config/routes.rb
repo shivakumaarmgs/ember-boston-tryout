@@ -3,6 +3,8 @@ Rails.application.routes.draw do
   namespace :api do
       resources :speakers
       resources :posts
+      resources :presentations
+      resources :comments
   end
   
   # The priority is based upon order of creation: first created -> highest priority.

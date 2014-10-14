@@ -8,10 +8,11 @@ export default Ember.ObjectController.extend({
 
 	doneEditing: function() {
 		this.set('isEditing', false);
-    var post = this.store.createRecord('post', {
-      title: this.get('title'),
-      body: this.get('body')
+    var title = this.get('title');
+    var presentation = this.store.createRecord('presentation', {
+      title: title,
+      speaker: this.get('model')
     });
-    post.save();
+    presentation.save();
 	}
 });
