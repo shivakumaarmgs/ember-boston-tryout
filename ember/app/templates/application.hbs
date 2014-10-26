@@ -1,8 +1,17 @@
+<div class="col-md-12">
 <h2 id='title'>Welcome to Boston Ember</h2>
-
-{{link-to 'Home' 'application'}}
-{{link-to 'About' 'about'}}
-{{link-to 'Speakers' 'speakers'}}
-{{link-to 'Posts' 'posts'}}
+<nav class="navbar navbar-default" role="navigation">
+<div class="container-fluid">
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+<ul class="nav navbar-nav">
+<li>{{link-to 'Home' 'application'}}</li>
+<li>{{link-to 'About' 'about'}}</li>
+<li>{{link-to 'Speakers' 'speakers'}}</li>
+<li>{{link-to 'Posts' 'posts'}}</li>
+</ul>
+</div>
+</div>
+</nav>
 
 {{outlet}}
+</div>

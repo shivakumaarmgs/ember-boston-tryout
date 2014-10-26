@@ -1,8 +1,9 @@
 {{#each}}
-  {{~#link-to 'posts.show' this}}
+  {{~#link-to 'post' this}}
     {{title}}</br>
   {{~/link-to}}
 {{/each}}
 </br>
 </br>
+{{outlet}}
 {{link-to 'New Post' 'posts.new'}}

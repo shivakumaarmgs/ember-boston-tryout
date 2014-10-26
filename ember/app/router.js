@@ -11,7 +11,7 @@ Router.map(function() {
     this.route('show', {path: ':speaker_id'});
   });
   this.resource('posts', function() {
-    this.route('show', {path: ':post_id'});
+    this.resource('post', {path: ':post_id'});
     this.route('new');
   });
 });

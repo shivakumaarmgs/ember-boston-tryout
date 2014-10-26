@@ -1,3 +1,16 @@
-<h2>Posts</h2>
 
+<div class="col-md-2">
+<h2>Posts</h2>
+{{#each}}
+  {{~#link-to 'post' this}}
+    {{title}}</br>
+  {{~/link-to}}
+{{/each}}
+<br>
+<br>
+{{link-to 'New Post' 'posts.new'}}
+</div>
+
+<div class="col-md-10">
 {{outlet}}
+</div>
